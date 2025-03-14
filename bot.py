@@ -83,6 +83,7 @@ async def show_subscriptions(update: Update, context: ContextTypes.DEFAULT_TYPE)
     await query.answer()
 
     keyboard = [
+        [InlineKeyboardButton("📅 Free 24 hours trial - €Free", callback_data="trial")]
         [InlineKeyboardButton("📅 Monthly - €3", callback_data="subscribe_monthly")],
         [InlineKeyboardButton("📅 Quarterly - €6", callback_data="subscribe_quarterly")],
         [InlineKeyboardButton("📅 Annual - €10", callback_data="subscribe_annual")]
